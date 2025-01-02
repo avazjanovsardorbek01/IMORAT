@@ -1,0 +1,9 @@
+.logo_animation {
+  filter: none;
+  transition: all 0.2s ease;
+}
+
+.logo_animation:hover {
+  filter: drop-shadow(4px 4px 4px #208368);
+  transition: all 0.2s ease;
+}

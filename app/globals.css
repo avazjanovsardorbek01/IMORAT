@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gantari", sans-serif !important;
+  scroll-behavior: smooth
+}
+
+html,body {
+  @apply overflow-x-hidden;
+}
+
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.container-2{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+html,body{
+  overflow-x: hidden !important;
+}
+
+::placeholder{
+  color:#000 !important;
+  opacity: 0.6 !important;
+}
+
+.bx-menu{
+  display: none !important;
+}
+
+
+
+@media only screen and (max-width: 640px){
+  .bx-menu{
+    display: block !important;
+  }
+
+  html,body {
+      overflow-x: hidden !important;
+  }
+
+}
+
+
+
+/* #section-1-2 {
+  background-image: url('/assets/images/png/contact-back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: scaleX(-1);
+  color: #000;
+} */
+
+#section-1-2{
+  position: relative;
+  overflow: hidden;
+  border-radius:20px;
+}
+
+#section-1-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/png/contact-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+#section-4-2{
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#section-4-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/png/discover-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+#section-6 {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#section-6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/png/background-one.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+
+
