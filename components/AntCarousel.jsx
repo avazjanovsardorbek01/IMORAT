@@ -13,16 +13,18 @@ const AntCarousel = () => {
     objectFit: "cover",
     borderRadius: "15px",
   };
-
+  const divstyle = {
+    borderRadius: "15px",
+  };
   return (
     <Carousel autoplay>
-      <div>
+      <div className="rounded-lg">
         <Image src={Tashkent} alt="Tashkent" style={contentStyle} />
       </div>
-      <div>
+      <div className="rounded-lg">
         <Image src={Samarqand} alt="Tashkent" style={contentStyle} />
       </div>
-      <div>
+      <div className="rounded-lg">
         <Image src={Buxoro} alt="Tashkent" style={contentStyle} />
       </div>
     </Carousel>

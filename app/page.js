@@ -114,8 +114,8 @@ export default function Home() {
   return (
     <>
       {/* SECTION-1 STARTED */}
-      <section id="section-1" className="pb-[120px]">
-        <div className="container">
+      <section id="section-1" className="pb-[120px] rounded-lg">
+        <div className="container rounded-lg">
           <AntCarousel />
         </div>
       </section>
@@ -126,11 +126,14 @@ export default function Home() {
       <section id="section-2" className="pb-[60px]">
         <div className="container">
           <h1 className="text-[#100E2C] sm:text-[23px] text-center font-[700] text-[50px]">
-            Discover your featured property
+            Выберите свой идеальный объект
           </h1>
-          <p className="text-center pt-[5px] sm:text-[10px] pb-[40px]">
-            Leo morbi faucibus mattis pharetra tellus velit ultricies duis
-            rhoncus
+          <p className="text-center  pt-[5px] sm:text-[10px] pb-[40px]">
+            Мы предлагаем разнообразные объекты недвижимости, которые могут
+            удовлетворить любые ваши потребности.
+            <br />
+            Ознакомьтесь с нашими предложениями и выберите лучший вариант для
+            себя.
           </p>
 
           <div className="wrapper sm:px-[20px] sm:gap-[12px] gap-[24px]">
