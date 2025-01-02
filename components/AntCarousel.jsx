@@ -1,29 +1,29 @@
 import React from "react";
 import { Carousel } from "antd";
 import "antd/dist/reset.css";
+import Image from "next/image";
+import Tashkent from "../public/assets/images/png/bg-hero.jpg";
+import Samarqand from "../public/assets/images/png/bg-hero-2.jpg";
+import Buxoro from "../public/assets/images/png/bg-hero-3.png";
 
 const AntCarousel = () => {
   const contentStyle = {
     height: "550px",
-    color: "#fff",
-    lineHeight: "400px",
-    textAlign: "center",
-    background: "#364d79",
+    width: "100%",
+    objectFit: "cover",
+    borderRadius: "15px",
   };
 
   return (
     <Carousel autoplay>
       <div>
-        <h3 style={contentStyle}>First Slide</h3>
+        <Image src={Tashkent} alt="Tashkent" style={contentStyle} />
       </div>
       <div>
-        <h3 style={contentStyle}>Second Slide</h3>
+        <Image src={Samarqand} alt="Tashkent" style={contentStyle} />
       </div>
       <div>
-        <h3 style={contentStyle}>Third Slide</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>Fourth Slide</h3>
+        <Image src={Buxoro} alt="Tashkent" style={contentStyle} />
       </div>
     </Carousel>
   );
