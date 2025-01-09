@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "antd"; // Импорт Carousel из antd
+import { Carousel } from "antd";
 import "antd/dist/reset.css";
 import Image from "next/image";
 import Tashkent from "../public/assets/images/png/bg-hero.jpg";
@@ -8,8 +8,8 @@ import Buxoro from "../public/assets/images/png/bg-hero-3.png";
 
 const AntCarousel = () => {
   return (
-    <Carousel autoplay>
-      <div className="carousel-slide rounded_mine">
+    <Carousel autoplay className="carousel-wrapper">
+      <div className="carousel-slide">
         <Image
           src={Tashkent}
           alt="Tashkent"
@@ -17,11 +17,10 @@ const AntCarousel = () => {
             height: "550px",
             width: "100%",
             objectFit: "cover",
-            borderRadius: "12px",
           }}
         />
       </div>
-      <div className="carousel-slide rounded_mine">
+      <div className="carousel-slide">
         <Image
           src={Samarqand}
           alt="Samarqand"
@@ -29,11 +28,10 @@ const AntCarousel = () => {
             height: "550px",
             width: "100%",
             objectFit: "cover",
-            borderRadius: "12px",
           }}
         />
       </div>
-      <div className="carousel-slide rounded_mine">
+      <div className="carousel-slide">
         <Image
           src={Buxoro}
           alt="Buxoro"
@@ -41,7 +39,6 @@ const AntCarousel = () => {
             height: "550px",
             width: "100%",
             objectFit: "cover",
-            borderRadius: "12px",
           }}
         />
       </div>

@@ -8,8 +8,27 @@
   transition: all 0.2s ease;
 }
 
-:where(.css-dev-only-do-not-override-161f05s).ant-carousel
-  .slick-initialized
-  .slick-slide {
-  border-radius: 5rem !important;
+/* Применяем border-radius ко всем элементам внутри карусели */
+.carousel-wrapper .slick-list {
+  border-radius: 16px !important; /* На slick-list */
+}
+
+.carousel-wrapper .slick-slide {
+  border-radius: 16px !important; /* На каждый слайд */
+}
+
+.carousel-wrapper .carousel-slide {
+  overflow: hidden;
+}
+
+.carousel-wrapper .slick-track {
+  border-radius: 16px !important; /* На внутренний контейнер слайдов */
+}
+.carousel-wrapper .slick-slide {
+  overflow: hidden;
+}
+
+.carousel-wrapper .carousel-slide {
+  border-radius: 16px !important;
+  overflow: hidden;
 }
