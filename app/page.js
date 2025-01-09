@@ -137,9 +137,9 @@ export default function Home() {
         <div className="container rounded-lg relative">
           <AntCarousel />
           <div className="p-[40px] sm:p-[20px] shadow-xl rounded-[12px] w-full max-w-[1076px] bg-[#fff] mx-auto">
-            <div className="flex flex-wrap items-center justify-center gap-[12px]">
+            <div className="flex flex-wrap items-center justify-between sm:justify-center gap-[12px]">
               <select
-                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 cursor-pointer h-[50px] outline-none rounded-[5px] font-medium shadow-md"
+                className="p-[15px] w-full sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 cursor-pointer h-[50px] outline-none rounded-[5px] font-medium shadow-md"
                 name="category"
               >
                 <option value="category 1">Категория</option>
@@ -148,7 +148,7 @@ export default function Home() {
               </select>
 
               <select
-                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 cursor-pointer h-[50px] outline-none rounded-[5px] font-medium shadow-md"
+                className="p-[15px] w-full sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 cursor-pointer h-[50px] outline-none rounded-[5px] font-medium shadow-md"
                 name="property"
               >
                 <option value="Property Type">Тип недвижимости</option>
@@ -158,7 +158,7 @@ export default function Home() {
               </select>
 
               <select
-                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 h-[50px] cursor-pointer outline-none rounded-[5px] font-medium shadow-md"
+                className="p-[15px] w-full sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 h-[50px] cursor-pointer outline-none rounded-[5px] font-medium shadow-md"
                 name="location"
               >
                 <option value="location">Местоположение</option>
@@ -168,9 +168,13 @@ export default function Home() {
                 <option value="bukhara">Бухара</option>
               </select>
 
-              <Image src={Filter} alt="filter" className="cursor-pointer" />
+              <Image
+                src={Filter}
+                alt="filter"
+                className="cursor-pointer sm:mt-[10px] lg:mt-0"
+              />
 
-              <button className="flex text-[#Fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#004ae1] active:bg-[#003fbb] bg-gradient-to-r from-[#0057FF] to-[#003FBB] shadow-lg duration-150 transition-all items-center gap-[12px]">
+              <button className="flex text-[#fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#004ae1] active:bg-[#003fbb] bg-gradient-to-r from-[#0057FF] to-[#003FBB] shadow-lg duration-150 transition-all items-center gap-[12px]">
                 <i className="bx bx-search text-[#fff] text-[25px]"></i> Поиск
               </button>
             </div>

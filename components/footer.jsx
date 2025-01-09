@@ -7,7 +7,6 @@ import Twitter from "@/public/assets/images/svg/twitter.svg";
 import Instagram from "@/public/assets/images/svg/insta.svg";
 import Telegram from "@/public/assets/images/svg/telegram.svg";
 
-// Убираем "boxicons" из глобального импорта и подключаем динамически при клиентской загрузке
 const Index = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -22,12 +21,11 @@ const Index = () => {
       <footer className="bg-[#100E2C] text-[#fff]">
         <div className="container">
           <div className="py-[60px] sm:py-[40px] border-b-[1px] border-b-[#ffffffb8]">
-            <ul className="flex sm:flex-col sm:px-[20px] sm:gap-[60px] items-start gap-[104px]">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[60px]">
               <li className="flex flex-col gap-[24px]">
                 <a className="pb-[8px] text-[20px] font-[600]" href="">
                   Часы работы
                 </a>
-
                 <a
                   className="text-[16px] font-[400] hover:text-[#ffffffcf] duration-200 transition-all"
                   href=""
@@ -46,7 +44,6 @@ const Index = () => {
                 <a className="pb-[8px] text-[20px] font-[600]" href="">
                   Найдите нас
                 </a>
-
                 <a
                   className="text-[16px] font-[400] hover:text-[#ffffffcf] duration-200 transition-all"
                   href=""
@@ -71,7 +68,6 @@ const Index = () => {
                 <a className="pb-[8px] text-[20px] font-[600]" href="">
                   Недвижимость
                 </a>
-
                 <a
                   className="text-[16px] font-[400] hover:text-[#ffffffcf] duration-200 transition-all"
                   href=""
@@ -102,7 +98,6 @@ const Index = () => {
                 <a className="pb-[8px] text-[20px] font-[600]" href="">
                   Ссылки
                 </a>
-
                 <a
                   className="text-[16px] font-[400] hover:text-[#ffffffcf] duration-200 transition-all"
                   href=""
@@ -133,14 +128,12 @@ const Index = () => {
                 <a className="pb-[8px] text-[20px] font-[600]" href="">
                   Новости
                 </a>
-
                 <a
                   className="text-[16px] font-[400] hover:text-[#ffffffcf] duration-200 transition-all"
                   href=""
                 >
                   Подпишитесь на нашу рассылку
                 </a>
-
                 <div className="bg-[#fff] flex items-center justify-between w-[280px] rounded-[12px] p-[6px]">
                   <input
                     type="text"
@@ -155,6 +148,7 @@ const Index = () => {
             </ul>
           </div>
 
+          {/* FOOTER CONTENT FOR MOBILE DEVICES */}
           <div className="py-[20px] sm:flex items-center sm:gap-[10px] sm:justify-start justify-between">
             <div className="flex items-center sm:gap-[5px] gap-[12px]">
               <Image className="cursor-pointer" src={Facebook} alt="facebook" />
@@ -169,7 +163,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-
       {/* FOOTER SECTION ENDED */}
     </>
   );

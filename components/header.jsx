@@ -15,15 +15,17 @@ const Index = () => {
       {/* HEADER SECTION STARTED */}
       <header className="py-[24px] bg-[#fff] sm:px-[20px]">
         <div className="flex container sm:container-2 items-center justify-between">
-          <Image
-            className="cursor-pointer logo_animation"
-            src={Logo}
-            alt="logo"
-            style={{
-              width: "65px",
-              borderRadius: "18px",
-            }}
-          />
+          <Link href="/" passHref>
+            <Image
+              className="cursor-pointer logo_animation"
+              src={Logo}
+              alt="logo"
+              style={{
+                width: "65px",
+                borderRadius: "18px",
+              }}
+            />
+          </Link>
 
           <ul className="flex sm:hidden gap-[24px] items-center">
             <li>
@@ -39,7 +41,7 @@ const Index = () => {
                 href="/property"
                 className="text-[16px] font-[500] border-b-[2px] border-b-transparent hover:border-b-[#000] hover:cursor-pointer transition-all duration-300"
               >
-                Недвижимость
+                Объекты
               </Link>
             </li>
             <li>

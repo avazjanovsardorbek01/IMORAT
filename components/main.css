@@ -32,3 +32,61 @@
   border-radius: 16px !important;
   overflow: hidden;
 }
+/* Для экранов шириной менее 1000px */
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer__section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__item {
+    width: 100%;
+  }
+
+  .footer__newsletter {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__newsletter input {
+    width: 100%;
+  }
+
+  .footer__newsletter button {
+    width: 100%;
+  }
+
+  /* Уменьшаем изображения в секции с городами */
+  .city-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .city-images img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Для каждого блока с текстом увеличиваем отступы и делаем их более читаемыми */
+  .footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Для экранов шириной менее 1200px */
+@media screen and (max-width: 1200px) {
+  .footer__section {
+    flex-direction: column;
+  }
+}
