@@ -56,7 +56,7 @@ const FormComponent = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-[20px] items-start"
+      className="flex flex-col gap-[20px] items-center justify-center"
       action=""
       method="POST"
     >
@@ -66,7 +66,7 @@ const FormComponent = () => {
         placeholder="Имя"
         value={formData.name}
         onChange={handleChange}
-        className="p-[16px] bg-white rounded-[6px] sm:h-[50px] sm:w-[310px] w-[336px] outline-none text-[#666]"
+        className="p-[16px] bg-white rounded-[6px] w-[90%] sm:w-[310px] md:w-[300px] lg:w-[300px] outline-none text-[#666]"
       />
 
       <input
@@ -75,7 +75,7 @@ const FormComponent = () => {
         placeholder="E-mail"
         value={formData.email}
         onChange={handleChange}
-        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] rounded-[6px] w-[336px] outline-none text-[#666]"
+        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] md:w-[300px] lg:w-[300px] rounded-[6px] w-[90%] outline-none text-[#666]"
       />
 
       <input
@@ -84,7 +84,7 @@ const FormComponent = () => {
         placeholder="Телефон"
         value={formData.phone}
         onChange={handleChange}
-        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] rounded-[6px] w-[336px] outline-none text-[#666]"
+        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] md:w-[300px] lg:w-[300px] rounded-[6px] w-[90%] outline-none text-[#666]"
       />
 
       <textarea
@@ -92,12 +92,12 @@ const FormComponent = () => {
         placeholder="Ваш комментарий"
         value={formData.comment}
         onChange={handleChange}
-        className="py-[8px] px-[16px] sm:h-[108px] sm:w-[310px] rounded-[6px] w-[336px] h-[108px] outline-none text-[#666]"
+        className="py-[8px] px-[16px] sm:h-[108px] sm:w-[310px] md:w-[300px] lg:w-[300px] rounded-[6px] w-[90%] h-[108px] outline-none text-[#666]"
       />
 
       <button
         type="submit"
-        className="w-[200px] mt-[15px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px]"
+        className="w-[300px] mt-[-2px] sm:w-[300px] mt-[15px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px] text-center"
       >
         Отправить сообщение
       </button>

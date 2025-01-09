@@ -435,7 +435,7 @@ export default function Home() {
       {/* SECTION-6 STARTED */}
       <section className="py-[60px] sm:py-[30px] p-[20px]" id="section-6">
         <div className="container pl-[110px] sm:pl-[0px] pr-[136px] sm:items-start sm:flex-col sm:justify-center sm:gap-[40px] flex items-center gap-[136px]">
-          <div className="registration sm:w-[350px] sm:h-[570px] w-[416px] h-[610px] bg-[#100E2C] rounded-[12px] sm:p-[] text-[#fff] p-[40px]">
+          <div className="registration sm:w-[350px] sm:h-[570px] w-[416px] h-[610px] bg-[#100E2C] rounded-[12px] sm:p-[20px] text-[#fff] p-[40px]">
             <h2 className="text-[28px] font-[700] pb-[10px]">
               Свяжитесь с нами
             </h2>
@@ -445,55 +445,12 @@ export default function Home() {
               запросами.
             </p>
             <FormComponent />
-            {/* <form
-              className="flex flex-col gap-[20px] items-start"
-              action=""
-              method="POST"
-            >
-              <input
-                type="text"
-                id=""
-                name="name"
-                placeholder="Your name"
-                className="p-[16px] bg-white rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] outline-none text-[#666]"
-              />
-
-              <input
-                type="email"
-                id=""
-                name="mail"
-                placeholder="Your mail"
-                className="p-[16px] bg-white rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] outline-none text-[#666]"
-              />
-
-              <input
-                type="number"
-                id=""
-                name="phone"
-                placeholder="Your phone"
-                className="p-[16px] bg-white rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] outline-none text-[#666]"
-              />
-
-              <textarea
-                id="id"
-                name="name"
-                placeholder="Your message"
-                className="py-[8px] px-[16px] rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] h-[108px] outline-none text-[#666]"
-              />
-
-              <button
-                type="submit"
-                className="w-[200px] sm:w-[180px] sm:h-[40px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px]"
-              >
-                Send message
-              </button>
-            </form> */}
           </div>
 
           <div className="text sm:hidden text-[#Fff]">
             <h2 className="text-[40px] sm:text-[20px] font-[700] pb-[30px]">
               Превращаем план в реальность,<br></br>
-              чтобы обеспечить ваше удовлетворение!{" "}
+              чтобы обеспечить ваше удовлетворение!
             </h2>
 
             <p>
@@ -503,6 +460,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* SECTION-6 ENDED */}
       {/* SECTION-7 STARTED */}
       <section className="py-[60px] sm:py-[20px] sm:px-[20px]" id="section-7">
@@ -525,7 +483,7 @@ export default function Home() {
                   alt="Самарканд"
                   width={400}
                   height={300}
-                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
                 />
                 <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
                   Самарканд
@@ -541,7 +499,7 @@ export default function Home() {
                   alt="Бухара"
                   width={400}
                   height={300}
-                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
                 />
                 <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
                   Бухара
@@ -557,7 +515,7 @@ export default function Home() {
                   alt="Ташкент"
                   width={400}
                   height={300}
-                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
                 />
                 <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
                   Ташкент
@@ -573,7 +531,7 @@ export default function Home() {
                   alt="Хорезм"
                   width={400}
                   height={300}
-                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
                 />
                 <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
                   Хорезм
@@ -589,7 +547,7 @@ export default function Home() {
                   alt="Ташкент"
                   width={400}
                   height={200}
-                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
                 />
                 <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
                   Ташкент

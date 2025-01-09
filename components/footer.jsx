@@ -156,10 +156,6 @@ const Index = () => {
           </div>
 
           <div className="py-[20px] sm:flex items-center sm:gap-[10px] sm:justify-start justify-between">
-            <p className="text-[#ffffffb8] sm:text-[10px] sm:px-[20px]">
-              ©Copyright Real Estate 2023. Дизайн от Figma.guru
-            </p>
-
             <div className="flex items-center sm:gap-[5px] gap-[12px]">
               <Image className="cursor-pointer" src={Facebook} alt="facebook" />
               <Image className="cursor-pointer" src={Twitter} alt="twitter" />
