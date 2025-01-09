@@ -7,3 +7,9 @@
   filter: drop-shadow(4px 4px 4px #208368);
   transition: all 0.2s ease;
 }
+
+:where(.css-dev-only-do-not-override-161f05s).ant-carousel
+  .slick-initialized
+  .slick-slide {
+  border-radius: 5rem !important;
+}

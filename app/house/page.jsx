@@ -15,7 +15,6 @@ import {
   SaleTwo,
   SaleThree,
 } from "@/png";
-import "boxicons";
 import {
   AvaGet,
   Bathrooms,

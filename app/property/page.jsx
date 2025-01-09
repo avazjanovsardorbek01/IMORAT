@@ -11,7 +11,7 @@ import {
   RentTwo,
 } from "@/png";
 import { Filter, Bedroom, Bathroom, Garage, Area } from "@/svg";
-import "boxicons";
+import AntCarousel from "@/components/AntCarousel";
 
 export default function Home() {
   const properties = [
@@ -107,46 +107,45 @@ export default function Home() {
   return (
     <>
       {/* SECTION-1 STARTED */}
-      <section id="section-1" className="pb-[120px] sm:px-[20px] sm:pb-[40px]">
-        <div className="container">
-          <Image className="rounded-[12px]" src={HeroTwo} alt="HeroTwo" />
-
-          <div className="p-[40px] sm:hidden shadow-xl rounded-[12px] w-[1076px] bg-[#fff] absolute top-[670px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="flex items-center gap-[12px]">
+      <section id="section-1" className="pb-[120px] rounded-lg">
+        <div className="container rounded-lg relative">
+          <AntCarousel />
+          <div className="p-[40px] sm:p-[20px] shadow-xl rounded-[12px] w-full max-w-[1076px] bg-[#fff] mx-auto">
+            <div className="flex flex-wrap items-center justify-center gap-[12px]">
               <select
-                className="p-[15px] w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
                 name="category"
               >
-                <option value="category 1">Category</option>
-                <option value="category 2">Category 1</option>
-                <option value="category 3">Category 2</option>
+                <option value="category 1">Категория</option>
+                <option value="category 2">Категория 1</option>
+                <option value="category 3">Категория 2</option>
               </select>
 
               <select
-                className="p-[15px] w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
                 name="property"
               >
-                <option value="Property Type">Property Type</option>
-                <option value="Property Type 2">Property Type 1</option>
-                <option value="Property Type 3">Property Type 2</option>
-                <option value="Property Type 4">Property Type 3</option>
+                <option value="Property Type">Тип недвижимости</option>
+                <option value="Property Type 2">Тип недвижимости 1</option>
+                <option value="Property Type 3">Тип недвижимости 2</option>
+                <option value="Property Type 4">Тип недвижимости 3</option>
               </select>
 
               <select
-                className="p-[15px] w-[254px] bg-[#F6F6F6] h-[50px] cursor-pointer outline-none rounded-[5px]"
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] h-[50px] cursor-pointer outline-none rounded-[5px]"
                 name="location"
               >
-                <option value="location">Location</option>
-                <option value="tashkent">Tashkent</option>
-                <option value="samarkand">Samarkand</option>
-                <option value="navoiy">Navoiy</option>
-                <option value="bukhara">Bukhara</option>
+                <option value="location">Местоположение</option>
+                <option value="tashkent">Ташкент</option>
+                <option value="samarkand">Самарканд</option>
+                <option value="navoiy">Навои</option>
+                <option value="bukhara">Бухара</option>
               </select>
 
               <Image src={Filter} alt="filter" className="cursor-pointer" />
 
-              <button className="flex text-[#Fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#0055ffe1] active:bg-[#0057FF] duration-150 transition-all  bg-[#0057FF] items-center gap-[12px] ">
-                <i className="bx bx-search text-[#fff] text-[25px]"></i> SEARCH
+              <button className="flex text-[#Fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#0055ffe1] active:bg-[#0057FF] duration-150 transition-all bg-[#0057FF] items-center gap-[12px]">
+                <i className="bx bx-search text-[#fff] text-[25px]"></i> Поиск
               </button>
             </div>
           </div>

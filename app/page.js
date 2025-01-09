@@ -16,51 +16,58 @@ import {
   RentOneLittle,
 } from "@/png";
 import { Filter, Bedroom, Bathroom, Garage, Area } from "@/svg";
-import { HeroThree, NewYork, Boston, Chicago, Washington, Miami } from "@/png";
-import "boxicons";
+import {
+  HeroThree,
+  NewYork,
+  Boston,
+  Chicago,
+  Washington,
+  Miami,
+  Toshkent,
+} from "@/png";
 import FormComponent from "@/components/tgg";
 import AntCarousel from "@/components/AntCarousel";
 
 const properties = [
   {
     image: SaleOne,
-    title: "Division Road house",
-    address: "506 Division Road Pembroke Pines, FL 33028",
+    title: "Дом на улице Дивижн",
+    address: "506 Дивижн Роуд, Пемброк Пайнс, Флорида 33028",
     price: "$250000",
     details: { Bedrooms: 3, Bathrooms: 2, Area: 1200, Garages: 3 },
   },
   {
     image: SaleTwo,
-    title: "North Road house",
-    address: "19 North Road Piscataway, NJ 08854",
+    title: "Дом на Северной улице",
+    address: "19 Северная улица, Пискатавей, Нью-Джерси 08854",
     price: "$222000",
     details: { Bedrooms: 2, Bathrooms: 3, Area: 1200, Garages: 1 },
   },
   {
     image: RentOne,
-    title: "Bloomfield house",
-    address: "29 W. Pawnee St.Bloomfield, NJ 07003",
+    title: "Дом в Блумфилде",
+    address: "29 У. Поуни Стрит, Блумфилд, Нью-Джерси 07003",
     price: "$250000",
     details: { Bedrooms: 4, Bathrooms: 2, Area: 850, Garages: 2 },
   },
   {
     image: SaleThree,
-    title: "Rockville Ave villa",
-    address: "8460 Rockville Ave. Greenville, NC 27834",
+    title: "Вилла на Роквилле Авеню",
+    address: "8460 Роквилль Авеню, Гринвилл, Северная Каролина 27834",
     price: "$180000",
     details: { Bedrooms: 5, Bathrooms: 2, Area: 320, Garages: 2 },
   },
   {
     image: RentTwo,
-    title: "Scotch Plains villa",
-    address: "820 Ohio Road Scotch Plains, NJ 07076",
+    title: "Вилла в Скотч Плейнс",
+    address: "820 Огайо Роуд, Скотч Плейнс, Нью-Джерси 07076",
     price: "$160000",
     details: { Bedrooms: 2, Bathrooms: 2, Area: 1200, Garages: 2 },
   },
   {
     image: SaleFour,
-    title: "Lees Creek house",
-    address: "7916 Lees Creek St. Dayton, OH 45420",
+    title: "Дом на Лис Крик",
+    address: "7916 Лис Крик Стрит, Дейтон, Огайо 45420",
     price: "$210000",
     details: { Bedrooms: 3, Bathrooms: 1, Area: 480, Garages: 1 },
   },
@@ -123,45 +130,48 @@ export default function Home() {
   return (
     <>
       {/* SECTION-1 STARTED */}
-      <section id="section-1" className="pb-[120px] rounded-lg">
+      <section
+        id="section-1"
+        className="pb-[120px] rounded-lg font-[Poppins] bg-gradient-to-b from-gray-50 to-gray-100"
+      >
         <div className="container rounded-lg relative">
           <AntCarousel />
           <div className="p-[40px] sm:p-[20px] shadow-xl rounded-[12px] w-full max-w-[1076px] bg-[#fff] mx-auto">
             <div className="flex flex-wrap items-center justify-center gap-[12px]">
               <select
-                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 cursor-pointer h-[50px] outline-none rounded-[5px] font-medium shadow-md"
                 name="category"
               >
-                <option value="category 1">Category</option>
-                <option value="category 2">Category 1</option>
-                <option value="category 3">Category 2</option>
+                <option value="category 1">Категория</option>
+                <option value="category 2">Категория 1</option>
+                <option value="category 3">Категория 2</option>
               </select>
 
               <select
-                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 cursor-pointer h-[50px] outline-none rounded-[5px] font-medium shadow-md"
                 name="property"
               >
-                <option value="Property Type">Property Type</option>
-                <option value="Property Type 2">Property Type 1</option>
-                <option value="Property Type 3">Property Type 2</option>
-                <option value="Property Type 4">Property Type 3</option>
+                <option value="Property Type">Тип недвижимости</option>
+                <option value="Property Type 2">Тип недвижимости 1</option>
+                <option value="Property Type 3">Тип недвижимости 2</option>
+                <option value="Property Type 4">Тип недвижимости 3</option>
               </select>
 
               <select
-                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] h-[50px] cursor-pointer outline-none rounded-[5px]"
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] text-gray-700 h-[50px] cursor-pointer outline-none rounded-[5px] font-medium shadow-md"
                 name="location"
               >
-                <option value="location">Location</option>
-                <option value="tashkent">Tashkent</option>
-                <option value="samarkand">Samarkand</option>
-                <option value="navoiy">Navoiy</option>
-                <option value="bukhara">Bukhara</option>
+                <option value="location">Местоположение</option>
+                <option value="tashkent">Ташкент</option>
+                <option value="samarkand">Самарканд</option>
+                <option value="navoiy">Навои</option>
+                <option value="bukhara">Бухара</option>
               </select>
 
               <Image src={Filter} alt="filter" className="cursor-pointer" />
 
-              <button className="flex text-[#Fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#0055ffe1] active:bg-[#0057FF] duration-150 transition-all bg-[#0057FF] items-center gap-[12px]">
-                <i className="bx bx-search text-[#fff] text-[25px]"></i> SEARCH
+              <button className="flex text-[#Fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#004ae1] active:bg-[#003fbb] bg-gradient-to-r from-[#0057FF] to-[#003FBB] shadow-lg duration-150 transition-all items-center gap-[12px]">
+                <i className="bx bx-search text-[#fff] text-[25px]"></i> Поиск
               </button>
             </div>
           </div>
@@ -169,14 +179,13 @@ export default function Home() {
       </section>
 
       {/* SECTION-1 ENDED */}
-
       {/* SECTION-2 STARTED */}
       <section id="section-2" className="pb-[60px]">
         <div className="container">
-          <h1 className="text-[#100E2C] sm:text-[23px] text-center font-[700] text-[50px]">
+          <h1 className="text-[#100E2C] sm:text-[23px] text-center font-[700] text-[50px] leading-tight font-[Poppins]">
             Выберите свой идеальный объект
           </h1>
-          <p className="text-center pt-[5px] sm:text-[10px] pb-[40px]">
+          <p className="text-center pt-[5px] sm:text-[12px] text-[18px] pb-[40px] text-gray-600 font-[Poppins] leading-relaxed">
             Мы предлагаем разнообразные объекты недвижимости, которые могут
             удовлетворить любые ваши потребности.
             <br />
@@ -194,71 +203,85 @@ export default function Home() {
         </div>
       </section>
       {/* SECTION-2 ENDED */}
-
       {/* SECTION-3 STARTED */}
       <section className="py-[100px] sm:py-[50px] bg-[#100E2C]" id="section-3">
         <div className="container">
           <div className="flex sm:flex-col sm:px-[20px] pl-[110px] sm:gap-[40px] pr-[140px] gap-[134px] items-center justify-between">
-            <Image src={HeroThree} alt="HeroThree" />
+            <Image
+              src={HeroThree}
+              alt="HeroThree"
+              className="w-[520px] h-[350px]"
+            />
 
             <div className="w-[498px] sm:w-[350px]">
-              <h2 className="font-[700] text-[39px] pb-[40px] sm:text-[25px] text-[#fff]">
-                Putting a plan to action,<br></br> to assure your satisfaction!
+              <h2 className="font-[Poppins] font-bold text-[35px] sm:text-[28px] text-[#FFFFFF] text-center leading-[1.2] tracking-wide pb-[20px]">
+                Превращаем план в реальность, чтобы обеспечить ваше
+                удовлетворение!
               </h2>
 
-              <p className="pb-[40px] text-[#fff]">
-                Ultrices quis at enim in tristique in id diam suspendisse. Sed
-                fermentum velit id et donec dui. Sed nulla neque at phasellus in
-                adipiscing dictum.{" "}
+              <p className="font-[Poppins] text-[18px] sm:text-[14px] text-[#FFFFFF] text-center leading-relaxed pb-[30px]">
+                Мы стремимся к совершенству, улучшая каждый аспект для вашего
+                комфорта и удовлетворения. Каждый шаг мы сопровождаем тщательным
+                вниманием к деталям, обеспечивая надежность и высокое качество.
               </p>
 
               <button className="rounded-[6px] bg-[#0057FF] hover:bg-[#0055ffd7] transition-all duration-300 active:bg-[#0057FF] w-[200px] h-[50px] text-[#fff]">
-                Learn more
+                Узнать больше{" "}
               </button>
             </div>
           </div>
         </div>
       </section>
       {/* SECTION-3 ENDED */}
-
       {/* SECTION-4 STARTED */}
       <section
-        className="pt-[100px] sm:pt-[30px] sm:pb-[25px] pb-[60px]"
+        className="pt-[100px] sm:pt-[30px] sm:pb-[25px] pb-[60px] bg-gradient-to-b from-gray-100 to-white"
         id="section-4"
       >
-        <div className="container pl-[110px] sm:p-[20px] sm:gap-[50px] gap-[134px] sm:flex-col flex items-center pr-[292px]">
-          <div className="w-[416px] sm:w-[350px] text-center">
-            <h2 className="text-[#100E2C] text-[40px] pb-[10px] font-[700] sm:text-[25px] line-through-[50px]">
-              What our clietns say<br></br>
-              about us
+        <div className="container flex flex-col lg:flex-row items-center justify-between px-[20px] sm:px-[10px] gap-[50px]">
+          {/* Текстовый блок */}
+          <div className="w-full lg:w-[416px] text-center lg:text-left">
+            <h2 className="text-[#100E2C] text-[42px] font-bold leading-tight sm:text-[28px] sm:leading-snug pb-[15px]">
+              Что говорят наши клиенты
+              <br /> о нас
             </h2>
 
-            <p className="text-[20px] sm:text-[16px]">
-              Arcu laoreet malesuada nunc eget. Fermentum ut dui etiam aliquam
-              habitant elit euismod erat praesent. Tincidunt semper interdum
-              fames cras{" "}
+            <p className="text-[18px] sm:text-[16px] leading-relaxed text-gray-700">
+              Мы предлагаем отличные услуги, которые удовлетворяют все ваши
+              потребности. Каждый проект мы сопровождаем вниманием к деталям,
+              чтобы добиться наилучшего результата. Наши клиенты остаются
+              довольны, потому что мы предлагаем только лучшие решения!
             </p>
 
-            <h4 className="pt-[20px] text-[20px] sm:text-[16px] font-[600]">
-              Miya Monroe
-            </h4>
-            <p className="pt-[2px] text-[#7A7474] sm:text-[14px]">Buyer</p>
+            <div className="mt-[30px]">
+              <h4 className="text-[22px] sm:text-[18px] font-semibold text-gray-800">
+                Александр Иванов
+              </h4>
+              <p className="text-[16px] sm:text-[14px] text-gray-500">Клиент</p>
+            </div>
           </div>
 
-          <Image src={HeroFour} alt="HeroFour" />
+          {/* Изображение */}
+          <div className="w-full lg:w-[520px] h-auto flex items-center justify-center">
+            <Image
+              src={HeroFour}
+              alt="HeroFour"
+              className="rounded-lg shadow-lg w-full lg:w-[520px] h-[350px] object-cover"
+            />
+          </div>
         </div>
       </section>
-      {/* SECTION-4 ENDED */}
 
+      {/* SECTION-4 ENDED */}
       {/* SECTION-5 STARTED */}
       <section className="py-[60px] sm:py-[25px] sm:px-[20px]" id="section-5">
         <div className="container">
           <h2 className="text-center text-[#100E2C] text-[50px] sm:text-[25px] font-[700] pb-[10px]">
-            Commercial property
+            Коммерческая недвижимость
           </h2>
-          <p className="text-center pb-[40px]">
-            Leo morbi faucibus mattis pharetra tellus velit ultricies duis
-            rhoncus
+          <p className="text-center text-[20px]  pb-[40px]">
+            У нас есть все необходимое для вашего комфорта и успешного бизнеса.
+            Мы предоставляем лучшие условия для вашего роста.
           </p>
 
           <div className="flex flex-wrap sm:justify-center gap-[24px] items-center">
@@ -409,16 +432,17 @@ export default function Home() {
         </div>
       </section>
       {/* SECTION-5 ENDED */}
-
       {/* SECTION-6 STARTED */}
       <section className="py-[60px] sm:py-[30px] p-[20px]" id="section-6">
         <div className="container pl-[110px] sm:pl-[0px] pr-[136px] sm:items-start sm:flex-col sm:justify-center sm:gap-[40px] flex items-center gap-[136px]">
           <div className="registration sm:w-[350px] sm:h-[570px] w-[416px] h-[610px] bg-[#100E2C] rounded-[12px] sm:p-[] text-[#fff] p-[40px]">
-            <h2 className="text-[28px] font-[700] pb-[10px]">Get in touch</h2>
+            <h2 className="text-[28px] font-[700] pb-[10px]">
+              Свяжитесь с нами
+            </h2>
 
             <p className="pb-[20px]">
-              Leo morbi faucibus mattis pharetra tellus velit ultricies duis
-              rhoncus
+              Мы всегда рады ответить на ваши вопросы и помочь вам с любыми
+              запросами.
             </p>
             <FormComponent />
             {/* <form
@@ -468,46 +492,114 @@ export default function Home() {
 
           <div className="text sm:hidden text-[#Fff]">
             <h2 className="text-[40px] sm:text-[20px] font-[700] pb-[30px]">
-              Putting a plan to action,<br></br>
-              to assure your satisfaction!{" "}
+              Превращаем план в реальность,<br></br>
+              чтобы обеспечить ваше удовлетворение!{" "}
             </h2>
 
             <p>
-              Arcu laoreet malesuada nunc eget. Fermentum ut dui etiam aliquam
-              habitant elit
+              Мы тщательно работаем, чтобы удовлетворить ваши потребности и
+              ожидания.
             </p>
           </div>
         </div>
       </section>
       {/* SECTION-6 ENDED */}
-
       {/* SECTION-7 STARTED */}
       <section className="py-[60px] sm:py-[20px] sm:px-[20px]" id="section-7">
         <div className="container">
-          <h1 className="text-[#100E2C] sm:text-[25px] sm:pb-[5px] text-center text-[50px] pb-[14px] font-[700]">
-            What city will you live in?
+          <h1 className="text-[#100E2C] text-center sm:text-[25px] text-[50px] pb-[14px] font-[700]">
+            Исторические города Узбекистана
           </h1>
 
-          <p className="text-center pb-[40px] sm:text-[14px] sm:pb-[20px]">
-            Leo morbi faucibus mattis pharetra tellus velit ultricies duis
-            rhoncus.<br></br> Porttitor fermentum eu urna eget
+          <p className="text-center text-[20px] pb-[40px] sm:text-[14px] sm:pb-[20px]">
+            Самые древние и знаменитые города Узбекистана, которые имеют
+            уникальную историю, культуру и архитектуру.
           </p>
 
-          <div className="flex items-start gap-[24px]">
-            <div className="flex flex-col">
-              <div className="flex items-start sm:gap-[4px] gap-[24px] pb-[24px]">
-                <Image src={NewYork} alt="Newyork" />
-              </div>
-
-              <div className="flex items-center sm:gap-[4px] gap-[24px]">
-                <Image src={Washington} alt="Washington" />
+          <div className="flex flex-wrap justify-center gap-[24px]">
+            {/* Самарканд */}
+            <div className="flex flex-col items-center transition-all duration-500 hover:scale-105 w-full sm:w-[48%] md:w-[30%] lg:w-[18%]">
+              <div className="relative overflow-hidden rounded-[20px] shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl">
+                <Image
+                  src={NewYork} // Изображение для Самарканда
+                  alt="Самарканд"
+                  width={400}
+                  height={300}
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+                <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
+                  Самарканд
+                </p>
               </div>
             </div>
 
-            <Image className="w-[300px]" src={Chicago} alt="chicago" />
+            {/* Бухара */}
+            <div className="flex flex-col items-center transition-all duration-500 hover:scale-105 w-full sm:w-[48%] md:w-[30%] lg:w-[18%]">
+              <div className="relative overflow-hidden rounded-[20px] shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl">
+                <Image
+                  src={Chicago} // Изображение для Бухары
+                  alt="Бухара"
+                  width={400}
+                  height={300}
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+                <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
+                  Бухара
+                </p>
+              </div>
+            </div>
+
+            {/* Ташкент */}
+            <div className="flex flex-col items-center transition-all duration-500 hover:scale-105 w-full sm:w-[48%] md:w-[30%] lg:w-[18%]">
+              <div className="relative overflow-hidden rounded-[20px] shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl">
+                <Image
+                  src={Boston} // Изображение для Ташкента
+                  alt="Ташкент"
+                  width={400}
+                  height={300}
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+                <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
+                  Ташкент
+                </p>
+              </div>
+            </div>
+
+            {/* Хорезм */}
+            <div className="flex flex-col items-center transition-all duration-500 hover:scale-105 w-full sm:w-[48%] md:w-[30%] lg:w-[18%]">
+              <div className="relative overflow-hidden rounded-[20px] shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl">
+                <Image
+                  src={Washington} // Изображение для Хорезма
+                  alt="Хорезм"
+                  width={400}
+                  height={300}
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+                <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
+                  Хорезм
+                </p>
+              </div>
+            </div>
+
+            {/* Ташкент (особая фотка) */}
+            <div className="flex flex-col items-center transition-all duration-500 hover:scale-105 w-full sm:w-[48%] md:w-[30%] lg:w-[18%]">
+              <div className="relative overflow-hidden rounded-[20px] shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl">
+                <Image
+                  src={Miami} // Изображение для Ташкента
+                  alt="Ташкент"
+                  width={400}
+                  height={200}
+                  className="object-cover w-[100%] h-[300px] transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+                <p className="absolute bottom-4 left-4 text-white text-xl font-semibold text-shadow-md bg-black bg-opacity-40 px-4 py-2 rounded-lg">
+                  Ташкент
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       {/* SECTION-7 ENDED */}
     </>
   );

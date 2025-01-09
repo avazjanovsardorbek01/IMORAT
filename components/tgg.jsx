@@ -89,7 +89,7 @@ const FormComponent = () => {
 
       <textarea
         name="comment"
-        placeholder="Your comment"
+        placeholder="Ваш комментарий"
         value={formData.comment}
         onChange={handleChange}
         className="py-[8px] px-[16px] sm:h-[108px] sm:w-[310px] rounded-[6px] w-[336px] h-[108px] outline-none text-[#666]"
@@ -99,7 +99,7 @@ const FormComponent = () => {
         type="submit"
         className="w-[200px] mt-[15px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px]"
       >
-        Send message
+        Отправить сообщение
       </button>
     </form>
   );

@@ -9,7 +9,7 @@ import Buxoro from "../public/assets/images/png/bg-hero-3.png";
 const AntCarousel = () => {
   return (
     <Carousel autoplay>
-      <div className="carousel-slide ">
+      <div className="carousel-slide rounded_mine">
         <Image
           src={Tashkent}
           alt="Tashkent"
@@ -21,7 +21,7 @@ const AntCarousel = () => {
           }}
         />
       </div>
-      <div className="carousel-slide">
+      <div className="carousel-slide rounded_mine">
         <Image
           src={Samarqand}
           alt="Samarqand"
@@ -33,7 +33,7 @@ const AntCarousel = () => {
           }}
         />
       </div>
-      <div className="carousel-slide">
+      <div className="carousel-slide rounded_mine">
         <Image
           src={Buxoro}
           alt="Buxoro"

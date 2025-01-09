@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import "boxicons";
 import { Logo } from "@/svg";
 import Link from "next/link";
 import "./main.css";
@@ -32,7 +31,7 @@ const Index = () => {
                 href="/"
                 className="text-[16px] font-[500] border-b-[2px] border-b-transparent hover:border-b-[#000] hover:cursor-pointer transition-all duration-300"
               >
-                Home
+                Главная
               </Link>
             </li>
             <li>
@@ -40,7 +39,7 @@ const Index = () => {
                 href="/property"
                 className="text-[16px] font-[500] border-b-[2px] border-b-transparent hover:border-b-[#000] hover:cursor-pointer transition-all duration-300"
               >
-                Property
+                Недвижимость
               </Link>
             </li>
             <li>
@@ -48,7 +47,7 @@ const Index = () => {
                 href="/about"
                 className="text-[16px] font-[500] border-b-[2px] border-b-transparent hover:border-b-[#000] hover:cursor-pointer transition-all duration-300"
               >
-                About us
+                О нас
               </Link>
             </li>
             <li>
@@ -56,21 +55,16 @@ const Index = () => {
                 href="/contact"
                 className="text-[16px] font-[500] border-b-[2px] border-b-transparent hover:border-b-[#000] hover:cursor-pointer transition-all duration-300"
               >
-                Contact us
+                Контакты
               </Link>
             </li>
           </ul>
 
-          <div className="flex sm:hidden gap-[24px] items-end">
+          <div className="flex sm:hidden gap-[24px] items-center">
             <div className="first-div flex items-center gap-[8px]">
-              <box-icon name="user-circle"></box-icon>
-              <h2 className="text-[16px] font-[500] cursor-pointer">Login</h2>
-            </div>
-
-            <div className="first-div flex items-center gap-[8px]">
-              <box-icon name="phone"></box-icon>
+              <box-icon name="phone" className="mt-[-5px]"></box-icon>
               <h2 className="text-[16px] font-[500] cursor-pointer">
-                (257) 388-6895
+                (97) 777-65-22
               </h2>
             </div>
           </div>
