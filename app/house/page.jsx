@@ -109,8 +109,7 @@ export default function Home() {
   };
   return (
     <>
-      <FormComponent />
-      SECTION-1 STARTED
+      {/* SECTION-1 STARTED */}
       <section id="section-1" className="mb-[60px] sm:mb-[30px] sm:px-[20px]">
         <div className="container">
           <button className="py-[10px] mb-[16px] sm:mb-[10px] px-[32px] sm:px-[14px] sm:w-[100px] w-[137px] rounded-[6px] cursor-pointer hover:bg-[#8eda53df] active:bg-[#8EDA53] duration-150 transition-all bg-[#8EDA53] sm:text-[14px] text-[20px] text-[#fff]">

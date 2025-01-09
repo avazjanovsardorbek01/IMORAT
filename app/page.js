@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import "./page.css";
 import {
   HeroOne,
   SaleOne,
@@ -67,30 +68,38 @@ const properties = [
 
 const PropertyCard = ({ property }) => (
   <div className="card overflow-hidden rounded-b-[12px] bg-white shadow-lg">
-    <Image src={property.image} alt={property.title} />
+    <Image
+      src={property.image}
+      alt={property.title}
+      className="w-full h-auto object-cover" // Make sure the image is responsive
+    />
 
-    <div className="bg-[#fff] p-[24px] sm:p-[16px]">
-      <h3 className="text-[20px] sm:text-[16px] font-[600]">
+    <div className="bg-[#fff] p-[24px] sm:p-[16px] md:p-[20px] lg:p-[24px]">
+      <h3 className="text-[20px] sm:text-[16px] md:text-[18px] font-[600]">
         {property.title}
       </h3>
-      <p className="text-[#7A7474] pt-[10px] sm:text-[13px]">
+      <p className="text-[#7A7474] pt-[10px] sm:text-[13px] md:text-[14px]">
         {property.address}
       </p>
 
-      <h2 className="pb-[15px] border-b-[1px] border-b-[#7A74741A] text-[#000] pt-[15px] text-[22px] font-[600] sm:text-[18px]">
+      <h2 className="pb-[15px] border-b-[1px] border-b-[#7A74741A] text-[#000] pt-[15px] text-[22px] font-[600] sm:text-[18px] md:text-[20px] lg:text-[22px]">
         {property.price}
       </h2>
 
-      <div className="flex pt-[10px] items-center gap-[37px]">
+      <div className="flex pt-[10px] items-center gap-[37px] flex-wrap sm:gap-[20px] md:gap-[30px]">
         {Object.entries(property.details).map(([key, value]) => (
           <div key={key} className="flex gap-[12px] sm:gap-[8px] flex-col">
             <div className="flex items-center sm:gap-[4px] gap-[8px]">
-              <Image className="sm:w-[20px]" src={getIcon(key)} alt={key} />
-              <h3 className="text-[#100E2C] font-[500] text-[16px] sm:text-[12px]">
+              <Image
+                className="sm:w-[20px] md:w-[24px]"
+                src={getIcon(key)}
+                alt={key}
+              />
+              <h3 className="text-[#100E2C] font-[500] text-[16px] sm:text-[12px] md:text-[14px]">
                 {value}
               </h3>
             </div>
-            <h2 className="text-[#100E2C] font-[500] text-[14px] sm:text-[12px]">
+            <h2 className="text-[#100E2C] font-[500] text-[14px] sm:text-[12px] md:text-[14px]">
               {key}
             </h2>
           </div>
@@ -115,8 +124,47 @@ export default function Home() {
     <>
       {/* SECTION-1 STARTED */}
       <section id="section-1" className="pb-[120px] rounded-lg">
-        <div className="container rounded-lg">
+        <div className="container rounded-lg relative">
           <AntCarousel />
+          <div className="p-[40px] sm:p-[20px] shadow-xl rounded-[12px] w-full max-w-[1076px] bg-[#fff] mx-auto">
+            <div className="flex flex-wrap items-center justify-center gap-[12px]">
+              <select
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
+                name="category"
+              >
+                <option value="category 1">Category</option>
+                <option value="category 2">Category 1</option>
+                <option value="category 3">Category 2</option>
+              </select>
+
+              <select
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] cursor-pointer h-[50px] outline-none rounded-[5px]"
+                name="property"
+              >
+                <option value="Property Type">Property Type</option>
+                <option value="Property Type 2">Property Type 1</option>
+                <option value="Property Type 3">Property Type 2</option>
+                <option value="Property Type 4">Property Type 3</option>
+              </select>
+
+              <select
+                className="p-[15px] w-[254px] sm:w-[200px] lg:w-[254px] bg-[#F6F6F6] h-[50px] cursor-pointer outline-none rounded-[5px]"
+                name="location"
+              >
+                <option value="location">Location</option>
+                <option value="tashkent">Tashkent</option>
+                <option value="samarkand">Samarkand</option>
+                <option value="navoiy">Navoiy</option>
+                <option value="bukhara">Bukhara</option>
+              </select>
+
+              <Image src={Filter} alt="filter" className="cursor-pointer" />
+
+              <button className="flex text-[#Fff] h-[50px] px-[31px] py-[17px] rounded-[6px] hover:bg-[#0055ffe1] active:bg-[#0057FF] duration-150 transition-all bg-[#0057FF] items-center gap-[12px]">
+                <i className="bx bx-search text-[#fff] text-[25px]"></i> SEARCH
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -128,7 +176,7 @@ export default function Home() {
           <h1 className="text-[#100E2C] sm:text-[23px] text-center font-[700] text-[50px]">
             Выберите свой идеальный объект
           </h1>
-          <p className="text-center  pt-[5px] sm:text-[10px] pb-[40px]">
+          <p className="text-center pt-[5px] sm:text-[10px] pb-[40px]">
             Мы предлагаем разнообразные объекты недвижимости, которые могут
             удовлетворить любые ваши потребности.
             <br />
@@ -136,10 +184,10 @@ export default function Home() {
             себя.
           </p>
 
-          <div className="wrapper sm:px-[20px] sm:gap-[12px] gap-[24px]">
-            <div className="flex flex-wrap items-center gap-[24px]">
-              {properties.map((property, index) => (
-                <PropertyCard key={index} property={property} />
+          <div className="flex justify-center items-center w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+              {properties.map((property) => (
+                <PropertyCard key={property.id} property={property} />
               ))}
             </div>
           </div>
