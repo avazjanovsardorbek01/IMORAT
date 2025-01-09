@@ -158,9 +158,9 @@ export default function Home() {
 
       {/* SECTION-2 STARTED */}
       <section id="section-2" className="pb-[60px]">
-        <div className="container">
+        <div className="container m-auto">
           <div className="wrapper sm:px-[20px] sm:gap-[12px] gap-[24px]">
-            <div className="flex flex-wrap items-center gap-[24px]">
+            <div className="flex flex-wrap justify-center items-center gap-[24px]">
               {properties.map((property, index) => (
                 <PropertyCard key={index} property={property} />
               ))}
@@ -168,6 +168,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* SECTION-2 ENDED */}
     </>
   );
