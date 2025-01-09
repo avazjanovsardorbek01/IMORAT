@@ -205,33 +205,31 @@ export default function Home() {
       {/* SECTION-2 ENDED */}
       {/* SECTION-3 STARTED */}
       <section className="py-[100px] sm:py-[50px] bg-[#100E2C]" id="section-3">
-        <div className="container">
-          <div className="flex sm:flex-col sm:px-[20px] pl-[110px] sm:gap-[40px] pr-[140px] gap-[134px] items-center justify-between">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col-reverse lg:flex-row items-center lg:gap-[134px] gap-[40px]">
             <Image
               src={HeroThree}
               alt="HeroThree"
-              className="w-[520px] h-[350px]"
+              className="w-full max-w-[520px] h-auto lg:w-[520px] lg:h-[350px]"
             />
-
-            <div className="w-[498px] sm:w-[350px]">
-              <h2 className="font-[Poppins] font-bold text-[35px] sm:text-[28px] text-[#FFFFFF] text-center leading-[1.2] tracking-wide pb-[20px]">
+            <div className="text-center lg:text-left lg:w-[498px] w-full">
+              <h2 className="font-[Poppins] font-bold text-[28px] md:text-[32px] lg:text-[35px] text-[#FFFFFF] leading-[1.2] tracking-wide pb-[20px]">
                 Превращаем план в реальность, чтобы обеспечить ваше
                 удовлетворение!
               </h2>
-
-              <p className="font-[Poppins] text-[18px] sm:text-[14px] text-[#FFFFFF] text-center leading-relaxed pb-[30px]">
+              <p className="font-[Poppins] text-[14px] md:text-[16px] lg:text-[18px] text-[#FFFFFF] leading-relaxed pb-[30px]">
                 Мы стремимся к совершенству, улучшая каждый аспект для вашего
                 комфорта и удовлетворения. Каждый шаг мы сопровождаем тщательным
                 вниманием к деталям, обеспечивая надежность и высокое качество.
               </p>
-
-              <button className="rounded-[6px] bg-[#0057FF] hover:bg-[#0055ffd7] transition-all duration-300 active:bg-[#0057FF] w-[200px] h-[50px] text-[#fff]">
-                Узнать больше{" "}
+              <button className="rounded-[6px] bg-[#0057FF] hover:bg-[#0055ffd7] transition-all duration-300 active:bg-[#0057FF] w-[180px] md:w-[200px] h-[45px] md:h-[50px] text-[#fff]">
+                Узнать больше
               </button>
             </div>
           </div>
         </div>
       </section>
+
       {/* SECTION-3 ENDED */}
       {/* SECTION-4 STARTED */}
       <section
