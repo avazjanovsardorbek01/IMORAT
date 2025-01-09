@@ -23,11 +23,13 @@ export default function Home() {
         <div id="section-1-2" className="h-[830px] sm:h-max">
           <div className="flex sm:flex-col items-start sm:gap-[35px] sm:p-[20px] gap-[90px] p-[110px]">
             <div className="registration sm:w-[350px] sm:h-[570px] w-[416px] h-[610px] bg-[#100E2C] rounded-[12px] sm:p-[] text-[#fff] p-[40px]">
-              <h2 className="text-[28px] font-[700] pb-[10px]">Get in touch</h2>
+              <h2 className="text-[28px] font-[700] pb-[10px]">
+                Свяжитесь с нами
+              </h2>
 
               <p className="pb-[20px]">
-                Leo morbi faucibus mattis pharetra tellus velit ultricies duis
-                rhoncus
+                Мы всегда рады услышать от вас! Заполните форму, чтобы задать
+                вопрос или поделиться мнением.
               </p>
 
               <form
@@ -39,7 +41,7 @@ export default function Home() {
                   type="text"
                   id=""
                   name="name"
-                  placeholder="Your name"
+                  placeholder="Ваше имя"
                   className="p-[16px] bg-white rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] outline-none text-[#666]"
                 />
 
@@ -47,7 +49,7 @@ export default function Home() {
                   type="email"
                   id=""
                   name="mail"
-                  placeholder="Your mail"
+                  placeholder="Ваш email"
                   className="p-[16px] bg-white rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] outline-none text-[#666]"
                 />
 
@@ -55,14 +57,14 @@ export default function Home() {
                   type="number"
                   id=""
                   name="phone"
-                  placeholder="Your phone"
+                  placeholder="Ваш телефон"
                   className="p-[16px] bg-white rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] outline-none text-[#666]"
                 />
 
                 <textarea
                   id="id"
                   name="name"
-                  placeholder="Your message"
+                  placeholder="Ваше сообщение"
                   className="py-[8px] px-[16px] rounded-[6px] sm:w-[280px] sm:p-[12px] w-[336px] h-[108px] outline-none text-[#666]"
                 />
 
@@ -70,17 +72,20 @@ export default function Home() {
                   type="submit"
                   className="w-[200px] sm:w-[180px] sm:h-[40px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px]"
                 >
-                  Send message
+                  Отправить сообщение
                 </button>
               </form>
             </div>
 
             <div className="text pt-[8.5px] flex flex-col gap-[24px]">
               <h2 className="text-[40px] sm:text-[25px] sm:w-[350px] font-[700] w-[210px] leading-[40px]">
-                Feel free to contact us
+                Не стесняйтесь связаться с нами
               </h2>
 
-              <p className="pb-[8px]">Leo morbi faucibus mattis pharetra </p>
+              <p className="pb-[8px]">
+                Наши двери всегда открыты для вас, если у вас есть вопросы или
+                предложения.
+              </p>
 
               <div className="flex items-start gap-[11px]">
                 <i className="bx bx-map sm:text-[16px] text-[24px]"></i>
@@ -119,12 +124,12 @@ export default function Home() {
       <section id="section-2" className="py-[60px] sm:py-[30px] sm:px-[20px]">
         <div className="container">
           <h2 className="text-center text-[#100E2C] sm:text-[30px] text-[40px] font-[700] pb-[10px]">
-            Our Offices
+            Наши офисы
           </h2>
 
           <p className="pb-[40px] sm:pb-[20px] text-center">
-            Pretium interdum risus risus facilisis cras pellentesque ipsum
-            suspendisse{" "}
+            Мы открыты для общения в наших офисах. Вы можете прийти, задать
+            вопросы и познакомиться с нашей командой.
           </p>
 
           <div className="flex items-center gap-[20px] flex-wrap">
@@ -140,7 +145,7 @@ export default function Home() {
               </p>
 
               <h2 className="text-[16px] font-[500] pb-[12px]">
-                Phone: (736) 267-8659
+                Телефон: (736) 267-8659
               </h2>
               <h2 className="text-[16px] font-[500] pb-[12px]">
                 Email: rsmartin@gmail.com
@@ -159,7 +164,7 @@ export default function Home() {
               </p>
 
               <h2 className="text-[16px] font-[500] pb-[12px]">
-                Phone: (736) 267-8659
+                Телефон: (736) 267-8659
               </h2>
               <h2 className="text-[16px] font-[500] pb-[12px]">
                 Email: rsmartin@gmail.com
@@ -178,7 +183,7 @@ export default function Home() {
               </p>
 
               <h2 className="text-[16px] font-[500] pb-[12px]">
-                Phone: (736) 267-8659
+                Телефон: (736) 267-8659
               </h2>
               <h2 className="text-[16px] font-[500] pb-[12px]">
                 Email: rsmartin@gmail.com
