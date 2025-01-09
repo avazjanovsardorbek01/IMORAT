@@ -196,11 +196,10 @@ export default function Home() {
             Ознакомьтесь с нашими предложениями и выберите лучший вариант для
             себя.
           </p>
-
           <div className="flex justify-center items-center w-full">
             <div className="grid p-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-              {properties.map((property) => (
-                <PropertyCard key={property.id} property={property} />
+              {properties.map((property, index) => (
+                <PropertyCard key={property.id || index} property={property} />
               ))}
             </div>
           </div>
