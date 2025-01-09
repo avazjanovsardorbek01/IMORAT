@@ -60,44 +60,49 @@ const FormComponent = () => {
       action=""
       method="POST"
     >
+      {/* Имя */}
       <input
         type="text"
         name="name"
         placeholder="Имя"
         value={formData.name}
         onChange={handleChange}
-        className="p-[16px] bg-white rounded-[6px] w-[90%] sm:w-[310px] md:w-[300px] lg:w-[300px] outline-none text-[#666]"
+        className="p-[16px] bg-white rounded-[6px] w-[90%] sm:w-[310px] md:w-[300px] lg:w-[300px] xl:w-[300px] outline-none text-[#666]"
       />
 
+      {/* Email */}
       <input
         type="text"
         name="email"
         placeholder="E-mail"
         value={formData.email}
         onChange={handleChange}
-        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] md:w-[300px] lg:w-[300px] rounded-[6px] w-[90%] outline-none text-[#666]"
+        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] md:w-[300px] lg:w-[300px] xl:w-[300px] rounded-[6px] w-[90%] outline-none text-[#666]"
       />
 
+      {/* Телефон */}
       <input
         type="text"
         name="phone"
         placeholder="Телефон"
         value={formData.phone}
         onChange={handleChange}
-        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] md:w-[300px] lg:w-[300px] rounded-[6px] w-[90%] outline-none text-[#666]"
+        className="p-[16px] bg-white sm:h-[50px] sm:w-[310px] md:w-[300px] lg:w-[300px] xl:w-[300px] rounded-[6px] w-[90%] outline-none text-[#666]"
       />
 
+      {/* Комментарий */}
       <textarea
         name="comment"
         placeholder="Ваш комментарий"
         value={formData.comment}
         onChange={handleChange}
-        className="py-[8px] px-[16px] sm:h-[108px] sm:w-[310px] md:w-[300px] lg:w-[300px] rounded-[6px] w-[90%] h-[108px] outline-none text-[#666]"
+        className="py-[8px] px-[16px] sm:h-[108px] sm:w-[310px] md:w-[300px] lg:w-[300px] xl:w-[300px] rounded-[6px] w-[90%] h-[108px] outline-none text-[#666]"
       />
 
+      {/* Кнопка отправки */}
       <button
         type="submit"
-        className="w-[300px] mt-[-2px] sm:w-[300px] mt-[15px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px] text-center"
+        className="w-[300px] mt-[5px] sm:w-[300px] mt-[15px] h-[50px] bg-[#0057FF] active:bg-[#0057FF] transition-all duration-200 hover:bg-[#0055ffd5] rounded-[6px] text-center"
       >
         Отправить сообщение
       </button>

@@ -194,7 +194,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center items-center w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div className="grid p-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
               {properties.map((property) => (
                 <PropertyCard key={property.id} property={property} />
               ))}
@@ -277,151 +277,73 @@ export default function Home() {
           <h2 className="text-center text-[#100E2C] text-[50px] sm:text-[25px] font-[700] pb-[10px]">
             Коммерческая недвижимость
           </h2>
-          <p className="text-center text-[20px]  pb-[40px]">
+          <p className="text-center text-[20px] pb-[40px]">
             У нас есть все необходимое для вашего комфорта и успешного бизнеса.
             Мы предоставляем лучшие условия для вашего роста.
           </p>
 
-          <div className="flex flex-wrap sm:justify-center gap-[24px] items-center">
-            <div className="card">
-              <Image src={SaleOneLittle} alt="Sale One Little" />
-
-              <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
-                <h2 className="text-[20px] font-[600] pb-[10px]">
-                  Pembroke Pines office
-                </h2>
-
-                <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
-                  $150000
-                </h3>
-
-                <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bedroom} alt="bedroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bathroom} alt="bathroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Area} alt="area" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Garage} alt="garage" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
+          <div className="flex justify-center items-center w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
+              {/* Карточка 1 */}
+              <div className="card">
+                <Image src={SaleOneLittle} alt="Sale One Little" />
+                <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
+                  <h2 className="text-[20px] font-[600] pb-[10px]">
+                    Pembroke Pines office
+                  </h2>
+                  <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
+                    $150000
+                  </h3>
+                  <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
+                    {/* Параметры недвижимости */}
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="card">
-              <Image src={RentOneLittle} alt="Rent One Little" />
-
-              <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
-                <h2 className="text-[20px] font-[600] pb-[10px]">
-                  Sulphur office
-                </h2>
-
-                <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
-                  $2500/mo
-                </h3>
-
-                <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bedroom} alt="bedroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bathroom} alt="bathroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Area} alt="area" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Garage} alt="garage" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
+              {/* Карточка 2 */}
+              <div className="card">
+                <Image src={RentOneLittle} alt="Rent One Little" />
+                <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
+                  <h2 className="text-[20px] font-[600] pb-[10px]">
+                    Sulphur office
+                  </h2>
+                  <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
+                    $2500/mo
+                  </h3>
+                  <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
+                    {/* Параметры недвижимости */}
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="card">
-              <Image src={SaleTwoLittle} alt="Sale Two Little" />
-
-              <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
-                <h2 className="text-[20px] font-[600] pb-[10px]">
-                  Hamden depot
-                </h2>
-
-                <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
-                  $120000
-                </h3>
-
-                <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bedroom} alt="bedroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bathroom} alt="bathroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Area} alt="area" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Garage} alt="garage" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
+              {/* Карточка 3 */}
+              <div className="card">
+                <Image src={RentOneLittle} alt="Rent One Little" />
+                <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
+                  <h2 className="text-[20px] font-[600] pb-[10px]">
+                    Coral Gables office
+                  </h2>
+                  <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
+                    $1800/mo
+                  </h3>
+                  <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
+                    {/* Параметры недвижимости */}
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="card">
-              <Image src={SaleThreeLittle} alt="Sale Three Little" />
-
-              <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
-                <h2 className="text-[20px] font-[600] pb-[10px]">
-                  Fairground office
-                </h2>
-
-                <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
-                  $200000
-                </h3>
-
-                <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bedroom} alt="bedroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Bathroom} alt="bathroom" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Area} alt="area" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
-                  </div>
-
-                  <div className="flex items-center gap-[9px]">
-                    <Image src={Garage} alt="garage" />
-                    <h2 className="text-[16px] font-[500] text-[#100E2C]">2</h2>
+              {/* Карточка 4 */}
+              <div className="card">
+                <Image src={SaleOneLittle} alt="Sale One Little" />
+                <div className="text p-[20px] rounded-b-[12px] bg-white shadow-xl overflow-hidden">
+                  <h2 className="text-[20px] font-[600] pb-[10px]">
+                    Sunrise office
+                  </h2>
+                  <h3 className="pb-[20px] text-[#100E2C] text-[20px] font-[600] border-b-[#7A7474] border-b-[1px]">
+                    $145000
+                  </h3>
+                  <div className="pt-[10px] pb-[14px] gap-[30px] flex items-center">
+                    {/* Параметры недвижимости */}
                   </div>
                 </div>
               </div>
@@ -429,15 +351,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* SECTION-5 ENDED */}
       {/* SECTION-6 STARTED */}
       <section className="py-[60px] sm:py-[30px] p-[20px]" id="section-6">
-        <div className="container pl-[110px] sm:pl-[0px] pr-[136px] sm:items-start sm:flex-col sm:justify-center sm:gap-[40px] flex items-center gap-[136px]">
-          <div className="registration sm:w-[350px] sm:h-[570px] w-[416px] h-[610px] bg-[#100E2C] rounded-[12px] sm:p-[20px] text-[#fff] p-[40px]">
+        <div className="container flex sm:flex-col sm:items-start sm:justify-center sm:gap-[40px] gap-[136px] items-center sm:px-[20px] px-[110px] pr-[136px]">
+          {/* Контейнер с формой */}
+          <div className="registration sm:w-[350px] sm:h-[570px] w-[416px] h-[610px] bg-[#100E2C] rounded-[12px] sm:p-[20px] text-[#fff] p-[40px] mx-auto">
             <h2 className="text-[28px] font-[700] pb-[10px]">
               Свяжитесь с нами
             </h2>
-
             <p className="pb-[20px]">
               Мы всегда рады ответить на ваши вопросы и помочь вам с любыми
               запросами.
@@ -445,12 +368,13 @@ export default function Home() {
             <FormComponent />
           </div>
 
-          <div className="text sm:hidden text-[#Fff]">
+          {/* Блок с текстом, который будет видим только на десктопе */}
+          <div className="text text-[#fff] hidden lg:block">
             <h2 className="text-[40px] sm:text-[20px] font-[700] pb-[30px]">
-              Превращаем план в реальность,<br></br>
+              Превращаем план в реальность,
+              <br />
               чтобы обеспечить ваше удовлетворение!
             </h2>
-
             <p>
               Мы тщательно работаем, чтобы удовлетворить ваши потребности и
               ожидания.
