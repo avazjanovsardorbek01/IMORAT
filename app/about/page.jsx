@@ -242,54 +242,11 @@ export default function Home() {
             идеальную недвижимость.
           </p>
 
-          <div className="flex items-center flex-wrap gap-[24px]">
-            {/* Первая карточка агента */}
-            <div className="flex sm:w-[400px] sm:h-[150px] w-[636px] h-[256px] p-[15px] gap-[20px] rounded-[12px] shadow-lg">
-              <Image className="sm:w-[100px]" src={PersonOne} alt="person-1" />
-              <div className="flex flex-col">
-                <h3 className="text-[24px] sm:text-[16px] font-[600] pb-[5px]">
-                  Террелл Норман
-                </h3>
-                <p className="pb-[5px] sm:text-[8px] text-[14px] font-[500] text-[#100E2C]">
-                  Агент по недвижимости
-                </p>
-                <div className="flex py-[8px] border-b-[1px] border-b-[#7A747433] justify-between ">
-                  <h3 className="text-[14px] sm:text-[8px] font-[600]">Офис</h3>
-                  <p className="text-[14px] sm:text-[8px] font-[600] text-[#7A7474]">
-                    (358) 707-4989
-                  </p>
-                </div>
-                <div className="flex py-[8px] border-b-[1px] border-b-[#7A747433] justify-between ">
-                  <h3 className="text-[14px] sm:text-[8px] font-[600]">
-                    Мобильный
-                  </h3>
-                  <p className="text-[14px] sm:text-[8px] font-[600] text-[#7A7474]">
-                    (822) 622-2842
-                  </p>
-                </div>
-                <div className="flex py-[8px] border-b-[1px] sm:border-none border-b-[#7A747433] justify-between ">
-                  <h3 className="text-[14px] sm:text-[8px] font-[600]">
-                    Email
-                  </h3>
-                  <p className="text-[14px] sm:text-[8px] font-[600] text-[#7A7474]">
-                    shrapnull@yahoo.ca
-                  </p>
-                </div>
-                <div className="flex sm:hidden items-center gap-[16px] pt-[24px]">
-                  <Image src={IconOne} alt="IconOne" />
-                  <Image src={IconTwo} alt="IconTwo" />
-                  <Image src={IconThree} alt="IconThree" />
-                  <Image src={IconFour} alt="IconFour" />
-                  <Image src={IconFive} alt="IconFive" />
-                </div>
-              </div>
-            </div>
-
-            {/* Повторение карточек */}
-            {[...Array(3)].map((_, index) => (
+          <div className="grid gap-[24px] sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 place-items-center">
+            {[...Array(4)].map((_, index) => (
               <div
                 key={index}
-                className="flex sm:w-[400px] sm:h-[150px] w-[636px] h-[256px] p-[15px] gap-[20px] rounded-[12px] shadow-lg"
+                className="flex sm:w-full sm:max-w-[400px] sm:h-[150px] w-[636px] h-[256px] p-[15px] gap-[20px] rounded-[12px] shadow-lg"
               >
                 <Image
                   className="sm:w-[100px]"
@@ -303,7 +260,7 @@ export default function Home() {
                   <p className="pb-[5px] sm:text-[8px] text-[14px] font-[500] text-[#100E2C]">
                     Агент по недвижимости
                   </p>
-                  <div className="flex py-[8px] border-b-[1px] border-b-[#7A747433] justify-between ">
+                  <div className="flex py-[8px] border-b-[1px] border-b-[#7A747433] justify-between">
                     <h3 className="text-[14px] sm:text-[8px] font-[600]">
                       Офис
                     </h3>
@@ -311,7 +268,7 @@ export default function Home() {
                       (358) 707-4989
                     </p>
                   </div>
-                  <div className="flex py-[8px] border-b-[1px] border-b-[#7A747433] justify-between ">
+                  <div className="flex py-[8px] border-b-[1px] border-b-[#7A747433] justify-between">
                     <h3 className="text-[14px] sm:text-[8px] font-[600]">
                       Мобильный
                     </h3>
@@ -319,7 +276,7 @@ export default function Home() {
                       (822) 622-2842
                     </p>
                   </div>
-                  <div className="flex py-[8px] border-b-[1px] sm:border-none border-b-[#7A747433] justify-between ">
+                  <div className="flex py-[8px] border-b-[1px] sm:border-none border-b-[#7A747433] justify-between">
                     <h3 className="text-[14px] sm:text-[8px] font-[600]">
                       Email
                     </h3>
@@ -340,19 +297,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* SECTION-5 ENDED */}
 
       {/* SECTION-6 STARTED */}
       <section id="section-6-2" className="py-[60px] sm:py-[30px] px-[20px]">
         <div className="container pl-[110px] sm:pl-[0px]">
-          <div className="flex sm:flex-col sm:gap-[40px] items-center gap-[134px]">
-            <div className="flex flex-col gap-[30px] sm:w-[350px] items-start w-[526px]">
-              <h2 className="text-[40px] sm:text-[20px] font-[700]">
+          <div className="flex flex-col lg:flex-row items-center gap-[40px] sm:gap-[30px] md:gap-[50px] lg:gap-[100px]">
+            {/* Текстовая часть */}
+            <div className="flex flex-col gap-[30px] items-start w-full lg:w-[50%]">
+              <h2 className="text-[40px] sm:text-[20px] md:text-[28px] lg:text-[32px] xl:text-[40px] font-[700]">
                 Недвижимость, персонализированная для вас
               </h2>
 
-              <p>
+              <p className="text-[16px] sm:text-[14px] md:text-[16px] lg:text-[15px] xl:text-[16px]">
                 Мы предлагаем вам лучшие варианты недвижимости, которые подойдут
                 именно вам. Наша цель — помочь вам найти идеальное жилье с
                 учетом всех ваших пожеланий и потребностей. Обширный выбор,
@@ -360,12 +317,19 @@ export default function Home() {
                 гарантируют, что вы останетесь довольны своим выбором.
               </p>
 
-              <button className="text-[20px] sm:text-[14px] font-[500] text-[#fff] bg-[#0057FF] hover:bg-[#0055ffdf] duration-200 transition-all active:bg-[#0057FF] sm:w-[140px] sm:h-[35px] rounded-[6px] w-[200px] h-[50px]">
+              <button className="text-[20px] sm:text-[14px]  md:text-[16px]  p-2 mx-auto lg:text-[18px]  xl:text-[20px] font-[500] text-[#fff] bg-[#0057FF] hover:bg-[#0055ffdf] duration-200 transition-all active:bg-[#0057FF] rounded-[6px] sm:w-[140px] sm:h-[35px] md:w-[160px] md:h-[40px] lg:w-[180px] lg:h-[45px] xl:w-[200px] xl:h-[50px]">
                 Узнать больше
               </button>
             </div>
 
-            <Image src={Real} alt="realback" />
+            {/* Изображение */}
+            <div className="w-full sm:w-[300px] md:w-[400px] lg:w-[50%] flex justify-center">
+              <Image
+                src={Real}
+                alt="realback"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -374,62 +338,53 @@ export default function Home() {
 
       {/* SECTION-7 STARTED */}
       <section id="section-7" className="py-[60px] sm:py-[30px] sm:px-[20px]">
-        <div className="container">
-          <h2 className="text-center sm:text-[25px] text-[#100E2C] text-[50px] font-[700] pb-[14px]">
+        <div className="container mx-auto text-center">
+          <h2 className="text-[#100E2C] text-[50px] sm:text-[25px] font-[700] pb-[14px]">
             Новости блога
           </h2>
 
-          <p className="pb-[40px] sm:pb-[20px] text-center">
+          <p className="pb-[40px] sm:pb-[20px]">
             Мы следим за самыми актуальными трендами в недвижимости и дизайне,
             чтобы помочь вам быть в курсе последних событий.
           </p>
 
-          <div className="flex items-center gap-[20px] flex-wrap">
-            <div className="flex flex-col w-[416px]">
-              <Image src={HeyOne} alt="HeyOne" />
-
+          <div className="flex flex-wrap justify-center gap-[20px]">
+            <div className="flex flex-col w-[416px] sm:w-full lg:w-[416px]">
+              <Image src={HeyOne} alt="HeyOne" className="w-full" />
               <p className="text-[#7A7474] pt-[8px] text-[16px] font-[500]">
                 23.12.2023
               </p>
-
               <h2 className="text-[24px] font-[600] pb-[16px]">
                 Продажа домов начинает расти
               </h2>
-
               <p className="text-[#7A7474]">
                 Недвижимость снова становится привлекательной для инвесторов. В
                 последние месяцы наблюдается рост цен и спроса на жилые дома.
               </p>
             </div>
 
-            <div className="flex flex-col w-[416px]">
-              <Image src={HeyTwo} alt="HeyTwo" />
-
+            <div className="flex flex-col w-[416px] sm:w-full lg:w-[416px]">
+              <Image src={HeyTwo} alt="HeyTwo" className="w-full" />
               <p className="text-[#7A7474] pt-[8px] text-[16px] font-[500]">
                 23.12.2023
               </p>
-
               <h2 className="text-[24px] font-[600] pb-[16px]">
                 Тренды недвижимости и дизайна
               </h2>
-
               <p className="text-[#7A7474]">
                 Современные дизайнерские решения в недвижимости открывают новые
                 возможности для создания стильных и удобных пространств.
               </p>
             </div>
 
-            <div className="flex flex-col w-[416px]">
-              <Image src={HeyThree} alt="HeyThree" />
-
+            <div className="flex flex-col w-[416px] sm:w-full lg:w-[416px]">
+              <Image src={HeyThree} alt="HeyThree" className="w-full" />
               <p className="text-[#7A7474] pt-[8px] text-[16px] font-[500]">
                 23.12.2023
               </p>
-
               <h2 className="text-[24px] font-[600] pb-[16px]">
                 Ипотечные ставки опустились
               </h2>
-
               <p className="text-[#7A7474]">
                 Снижение ставок по ипотечным кредитам делает покупку жилья более
                 доступной для многих семей. Это дает шанс большему количеству
