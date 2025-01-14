@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build", // Yig‘ish fayllari joylashadigan papka nomi
+  output: "export", // Statik eksport qilish
+  distDir: "build", // Build fayllari uchun papka nomi
+  images: {
+    unoptimized: true, // O'chirib qo'yish optimizatsiya
+  },
 };
 
 export default nextConfig;
